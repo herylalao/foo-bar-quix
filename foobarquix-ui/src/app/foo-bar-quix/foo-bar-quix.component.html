@@ -1,6 +1,12 @@
 <div>
-<div class="container">
-    <h2>Already converted values : </h2>
-</div>
-<app-foo-bar-quix-form (submitNumberOutput)="convertNumber($event)"></app-foo-bar-quix-form>
+    <div class="container">
+        <h2>Already converted values : </h2>
+        <ul class="list-group" *ngFor="let message of messages">
+            <li class="list-group-item">
+                {{message.numberToConvert + ' and the result is ' + message.result }}
+            </li>
+        </ul>
+        
+    </div>
+    <app-foo-bar-quix-form (submitNumberOutput)="convertNumber($event)"></app-foo-bar-quix-form>
 </div>
