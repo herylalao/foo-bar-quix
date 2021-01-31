@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class FooBarQuixFormComponent implements OnInit {
 
-
+  inputNumber:string;
   constructor() {
 
   }
